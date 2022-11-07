@@ -21,8 +21,8 @@ window.addEventListener('DOMContentLoaded', () => {
         tabs[i].classList.add('tabheader__item_active');
     }
     
-    hideTabsContent ();
-    showTabContent ();
+    hideTabsContent();
+    showTabContent();
 
     tabsParent.addEventListener('click', (event) => {
         const target = event.target;
@@ -30,8 +30,8 @@ window.addEventListener('DOMContentLoaded', () => {
         if(target && target.classList.contains('tabheader__item')) {
             tabs.forEach((item, i) => {
                 if(target === item) {
-                    hideTabsContent ();
-                    showTabContent (i);
+                    hideTabsContent();
+                    showTabContent(i);
                 }
             });
         }
